@@ -15,7 +15,7 @@ bot.command('servicing', servicing());
 bot.on('message', greeting());
 // bot.on('message', servicing());
 
-/ Command to get information about Website Creation
+//Command to get information about Website Creation
 bot.command('website', (ctx) => {
   const websiteInfo = `
     Babyloncenter offers professional website creation services.
