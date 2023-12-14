@@ -15,8 +15,8 @@ const greeting = () => async (ctx: Context) => {
   const userName = `${ctx.message?.from.first_name}`;
 
   if (messageId) {
-    await replyToMessage(ctx, messageId, `  اهلا وسهلا بك. ، في بابلون!${userName} 
-    /services  اكتب لتصفح خدماتنا.`);
+    await replyToMessage(ctx, messageId, `  اهلا وسهلا بك في بابلون!${userName} 
+  لتصفح خدماتنا.  /services`);
   }
 };
 

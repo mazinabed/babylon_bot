@@ -17,10 +17,10 @@ const servicing = () => async (ctx: Context) => {
   if (messageId) {
     await replyToMessage(ctx, messageId, `
     يقدم مركز بابلون مجموعة من الخدمات التعليمية والتكنلوجية المتنوعةابرزها
-    /website
-    /hosting
-    /instagram
-    /training
+    /Website creation
+    /Host servises
+    /Social Marketing
+    /Training courses
     
 
   ` );
