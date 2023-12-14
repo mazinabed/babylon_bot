@@ -17,11 +17,11 @@ const servicing = () => async (ctx: Context) => {
   if (messageId) {
     await replyToMessage(ctx, messageId, `
     يقدم مركز بابلون مجموعة من الخدمات التعليمية والتكنلوجية المتنوعةابرزها
-    /Website creation
-    /Host servises
-    /Social Marketing
-    /Training courses
-    /Telegram Bots
+    /Website creation. انشاء مواقع الكترونية
+    /Host servises. خدمات الاستضافة
+    /Social Marketing. التسويق الالكتروني
+    /Training courses. الدورات التدريبية
+    /Telegram Bots. روبوتات تيليغرام
     
 
   ` );
