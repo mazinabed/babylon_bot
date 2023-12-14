@@ -16,11 +16,13 @@ const servicing = () => async (ctx: Context) => {
 
   if (messageId) {
     await replyToMessage(ctx, messageId, `
-    Babyloncenter offers the following services:
-    /website - Website Creation
-    /hosting - Hosting Services
-    /instagram - Instagram Ads
-    /web - Web Development Training
+    يقدم مركز بابلون مجموعة من الخدمات التعليمية والتكنلوجية المتنوعةابرزها
+    /website
+    /hosting
+    /instagram
+    /training
+    
+
   ` );
   }
 };
