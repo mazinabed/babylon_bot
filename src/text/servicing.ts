@@ -21,6 +21,7 @@ const servicing = () => async (ctx: Context) => {
     /Host servises
     /Social Marketing
     /Training courses
+    /Telegram Bots
     
 
   ` );
