@@ -65,6 +65,7 @@
 // };
 
 // export { servicing };
+
 import { Context, Markup } from 'telegraf';
 import createDebug from 'debug';
 
@@ -98,4 +99,37 @@ const servicing = () => async (ctx: Context) => {
   }
 };
 
-export { servicing };
+// Handle button clicks
+const handleButtonClick = () => async (ctx: Context) => {
+  const command =(ctx.callbackQuery as any).data;
+
+  if (command) {
+    switch (command) {
+      case 'website':
+        // Handle Website button click
+        await ctx.reply('You clicked the Website Creation button!');
+        break;
+      case 'hosting':
+        // Handle Host Services button click
+        await ctx.reply('You clicked the Host Services button!');
+        break;
+      case 'instagram':
+        // Handle Social Marketing button click
+        await ctx.reply('You clicked the Social Marketing button!');
+        break;
+      case 'web':
+        // Handle Training Courses button click
+        await ctx.reply('You clicked the Training Courses button!');
+        break;
+      case 'telegram':
+        // Handle Telegram Bots button click
+        await ctx.reply('You clicked the Telegram Bots button!');
+        break;
+      default:
+        break;
+    }
+  }
+};
+
+export { servicing, handleButtonClick };
+
