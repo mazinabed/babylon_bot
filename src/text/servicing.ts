@@ -89,9 +89,9 @@ const servicing = () => async (ctx: Context) => {
     // Use inline keyboard for services
     await ctx.reply('Choose a service:', {
       ...Markup.inlineKeyboard([
-        Markup.button.callback('Website Creation', 'website'),
-        Markup.button.callback('Host Services', 'hosting'),
-        Markup.button.callback('Social Marketing', 'instagram'),
+        Markup.button.callback('/Website Creation', '/website'),
+        Markup.button.callback('/Host Services', 'hosting'),
+        Markup.button.callback('/Social Marketing', 'instagram'),
         Markup.button.callback('Training Courses', 'web'),
         Markup.button.callback('Telegram Bots', 'telegram'),
       ]),
@@ -105,7 +105,7 @@ const handleButtonClick = () => async (ctx: Context) => {
 
   if (command) {
     switch (command) {
-      case 'Website':
+      case '/website':
         // Handle Website button click
         await ctx.reply('You clicked the Website Creation button!');
         break;
