@@ -105,7 +105,7 @@ const handleButtonClick = () => async (ctx: Context) => {
 
   if (command) {
     switch (command) {
-      case 'website':
+      case 'Website':
         // Handle Website button click
         await ctx.reply('You clicked the Website Creation button!');
         break;

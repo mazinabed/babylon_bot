@@ -11,7 +11,7 @@ const ENVIRONMENT = process.env.NODE_ENV || '';
 const bot = new Telegraf(BOT_TOKEN);
 
 // Register the handleButtonClick function as a command handler
-bot.command('website', handleButtonClick());
+bot.command('Website', handleButtonClick());
 bot.command('hosting', handleButtonClick());
 bot.command('instagram', handleButtonClick());
 bot.command('web', handleButtonClick());
