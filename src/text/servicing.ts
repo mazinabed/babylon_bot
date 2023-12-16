@@ -80,6 +80,12 @@ const servicing = () => async (ctx: Context) => {
   const messageId = ctx.message?.message_id;
 
   if (messageId) {
+    // You can use replyToMessage if needed
+    replyToMessage(ctx, messageId, `
+      يقدم مركز بابلون مجموعة من الخدمات التعليمية والتكنلوجية المتنوعة ابرزها
+    `);
+
+    // Use inline keyboard for services
     await ctx.reply('Choose a service:', {
       ...Markup.inlineKeyboard([
         Markup.button.callback('Website Creation', 'website'),
