@@ -65,18 +65,18 @@
 // };
 
 // export { servicing };
-const { Markup } = require('telegraf');
-const createDebug = require('debug');
+import { Context, Markup } from 'telegraf';
+import createDebug from 'debug';
 
 const debug = createDebug('bot:greeting_text');
 
-const replyToMessage = (ctx, messageId, text) => {
+const replyToMessage = (ctx: Context, messageId: number, text: string) => {
   ctx.reply(text, {
     reply_to_message_id: messageId,
   });
 };
 
-const servicing = () => async (ctx) => {
+const servicing = () => async (ctx: Context) => {
   const messageId = ctx.message?.message_id;
 
   if (messageId) {
@@ -92,4 +92,4 @@ const servicing = () => async (ctx) => {
   }
 };
 
-module.exports = { servicing };
+export { servicing };
